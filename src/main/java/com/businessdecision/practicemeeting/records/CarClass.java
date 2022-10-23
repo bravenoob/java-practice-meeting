@@ -1,4 +1,4 @@
-package com.businessdecision.practicemeeting.records;
+package hr.dstr89.demo.records;
 
 public class CarClass {
 

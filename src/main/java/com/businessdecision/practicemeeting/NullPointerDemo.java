@@ -1,11 +1,12 @@
-package com.businessdecision.practicemeeting;
+package hr.dstr89.demo;
 
-import com.businessdecision.practicemeeting.records.CarClass;
+import hr.dstr89.demo.records.CarClass;
 
 public class NullPointerDemo {
 
     public static void makeNullPointer() {
-       // how could you raise a NP ? Hint: look at the failing test, maybe call a method on that class?
+        CarClass car = null;
+        car.getMake();
     }
 
 }

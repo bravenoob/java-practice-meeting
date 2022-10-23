@@ -1,4 +1,4 @@
-package com.businessdecision.practicemeeting;
+package hr.dstr89.demo;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,8 +13,9 @@ public class StreamToList {
     }
 
     public static List<String> toListNew(Stream<String> stream) {
-        // can you write it shorter?
-        return null;
+        return stream
+                .map(String::toUpperCase)
+                .toList();
     }
 
 }

@@ -1,6 +1,6 @@
-package com.businessdecision.practicemeeting;
+package hr.dstr89.demo;
 
-import com.businessdecision.practicemeeting.enums.Day;
+import hr.dstr89.demo.enums.Day;
 
 public class SwitchExpressions {
 
@@ -27,8 +27,12 @@ public class SwitchExpressions {
     }
 
     public static int numberOfLettersEnhancedSwitch(Day day) {
-        // can you write it more compact?
-        return 0;
+       return switch (day) {
+            case MONDAY, FRIDAY, SUNDAY -> 6;
+            case TUESDAY                -> 7;
+            case THURSDAY, SATURDAY     -> 8;
+            case WEDNESDAY              -> 9;
+        };
     }
 
 }

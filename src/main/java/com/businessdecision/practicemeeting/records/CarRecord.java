@@ -1,7 +1,3 @@
-package com.businessdecision.practicemeeting.records;
+package hr.dstr89.demo.records;
 
-
-public class CarRecord{
-}
-
-// how would you make a real CarRecord?, hint it's not a public class
+public record CarRecord(String make, String model) {}

@@ -1,4 +1,4 @@
-package com.businessdecision.practicemeeting;
+package hr.dstr89.demo;
 
 public class TextBlocks {
 
@@ -12,14 +12,12 @@ public class TextBlocks {
 
     public static String getHtmlUsingTextBlocks(String title) {
         return """
-                <html>
-                    <body>
-                        <h1>%s</h1>
-                    </body>
-                </html>
-                """.formatted(title);
-        // can you write it with """ ?
-        // hint, use """lorem ipsum""".formatted(title)
+            <html>
+                <body>
+                    <h1>%s</h1>
+                </body>
+            </html>
+            """.formatted(title);
     }
 
 }

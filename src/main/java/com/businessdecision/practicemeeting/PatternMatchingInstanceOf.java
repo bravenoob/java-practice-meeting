@@ -1,4 +1,4 @@
-package com.businessdecision.practicemeeting;
+package hr.dstr89.demo;
 
 public class PatternMatchingInstanceOf {
 
@@ -15,14 +15,13 @@ public class PatternMatchingInstanceOf {
     }
 
     public static String checkTypePatternMatching(Object obj) {
-//        insert first if here:
-//            return String.format("Object is a string: %s", s);
-//        insert else if here:
-//            return String.format("Object is a number: %s", n);
-//        } else {
-//            return String.format("Object is not recognized");
-//        }
-        return null;
+        if (obj instanceof String s) {
+            return String.format("Object is a string: %s", s);
+        } else if (obj instanceof Number n) {
+            return String.format("Object is a number: %s", n);
+        } else {
+            return String.format("Object is not recognized");
+        }
     }
 
 }
