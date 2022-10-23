@@ -1,4 +1,4 @@
-package hr.dstr89.demo.enums;
+package com.businessdecision.practicemeeting.enums;
 
 public enum Day {
 

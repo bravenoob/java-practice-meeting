@@ -1,3 +1,3 @@
-package hr.dstr89.demo.records;
+package com.businessdecision.practicemeeting.records;
 
 public record CarRecord(String make, String model) {}

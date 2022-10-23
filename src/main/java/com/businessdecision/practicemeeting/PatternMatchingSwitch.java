@@ -1,4 +1,4 @@
-package hr.dstr89.demo;
+package com.businessdecision.practicemeeting;
 
 public class PatternMatchingSwitch {
 
@@ -17,7 +17,7 @@ public class PatternMatchingSwitch {
 
     public static double parseDoublePatternMatching(Object obj) {
         return switch (obj) {
-            case String s && s.length() > 0
+            case String s when s.length() > 0
                     -> Double.parseDouble(s);
             case Number n ->
                     n.doubleValue();

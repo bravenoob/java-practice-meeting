@@ -1,6 +1,6 @@
-package hr.dstr89.demo;
+package com.businessdecision.practicemeeting;
 
-import hr.dstr89.demo.enums.Day;
+import com.businessdecision.practicemeeting.enums.Day;
 
 public class SwitchExpressions {
 

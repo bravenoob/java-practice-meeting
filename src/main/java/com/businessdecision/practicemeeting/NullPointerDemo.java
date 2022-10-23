@@ -1,6 +1,6 @@
-package hr.dstr89.demo;
+package com.businessdecision.practicemeeting;
 
-import hr.dstr89.demo.records.CarClass;
+import com.businessdecision.practicemeeting.records.CarClass;
 
 public class NullPointerDemo {
 

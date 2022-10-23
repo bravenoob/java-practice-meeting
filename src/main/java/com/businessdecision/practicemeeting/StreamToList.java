@@ -1,4 +1,4 @@
-package hr.dstr89.demo;
+package com.businessdecision.practicemeeting;
 
 import java.util.List;
 import java.util.stream.Collectors;
