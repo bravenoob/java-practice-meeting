@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.xtermi2.java17</groupId>
-    <artifactId>java17</artifactId>
+    <groupId>com.businessdecision.practicemeeting</groupId>
+    <artifactId>java19</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>17</java.version>
+        <java.version>19</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
@@ -48,7 +48,7 @@
                     <compilerArgs>
                         <arg>--enable-preview</arg>
                         <arg>--add-modules</arg>
-                        <arg>jdk.incubator.vector,jdk.incubator.foreign</arg>
+                        <arg>jdk.incubator.vector</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
@@ -56,7 +56,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
-                    <argLine>--enable-preview -Dforeign.restricted=permit --add-modules jdk.incubator.foreign,jdk.incubator.vector</argLine>
+                    <argLine>--enable-preview --add-modules jdk.incubator.vector</argLine>
                 </configuration>
             </plugin>
             <plugin>
@@ -66,7 +66,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Automatic-Module-Name>com.github.xtermi2.java17</Automatic-Module-Name>
+                            <Automatic-Module-Name>com.businessdecision.practicemeeting</Automatic-Module-Name>
                         </manifestEntries>
                     </archive>
                 </configuration>
@@ -76,6 +76,9 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <release>${java.version}</release>
+                    <source>19</source>
+                    <target>19</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
         </plugins>
